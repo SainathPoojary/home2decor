@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400&family=DM+Sans&family=Montserrat&display=swap&family=Hind+Siliguri&family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.secondary-color {
+  background-color: #cd486b;
+}
+
+.secondary-color:hover {
+  transition: 0.5s;
+  background-color: #ee517b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+main {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/img/2.jpg") center center;
+}
+
+/* header */
+header {
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px #ffffff3d solid;
+}
+
+header .containers {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  margin: auto;
+  padding: 1rem 1rem;
+}
+
+header .logo img {
+  width: 13rem;
+}
+
+header nav ul {
+  font-size: 0.9rem;
+  color: #fff;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.current {
+  opacity: 1;
+}
+
+header nav ul li {
+  opacity: 0.8;
+}
+header nav ul li:hover {
+  opacity: 1;
+}
+
+/* HERO Section */
+
+.hero {
+  color: #fff;
+  display: flex;
+  /* align-items: center; */
+  margin-top: 15%;
+}
+
+.hero .containers {
+  width: 40%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.hero .containers h1 {
+  font-weight: 300;
+  font-size: 4.4rem;
+}
+.hero .containers p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.hero .containers a {
+  font-family: "Hind Siliguri", sans-serif;
+  padding: 1.3rem 2rem;
+  border: 1px solid #fff;
+  letter-spacing: 2px;
+}
+
+.hero .containers a:hover {
+  background-color: #cd486b;
+  border: 1px solid #cd486b;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  nav {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 40%;
+  }
+
+  .hero .containers h1 {
+    font-size: 2rem;
+  }
+  .hero .containers {
+    width: 80%;
+    margin-left: 8%;
+  }
+
+  .hero .containers a {
+    padding: 1rem 1rem;
+  }
+}
+
+/* gallery Section */
+/* .box {
+  transition: all 0.2s ease-in-out;
+}
+.box:hover {
+  transform: scale(1.5);
+} */
